@@ -1,0 +1,19 @@
+loc.
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages
+
+i.e.
+usb-cam
+python obj_tracker8.py --video 0
+rtsp-cam
+python obj_tracker8.py --video "rtsp://jjadmin:1234567890@10.0.4.37:554/stream2"
+
+#model type
+--mtype detection[DEFAULT]/segmentation/classification/pose
+#detection Fast=>Slow: yolov8n.pt[DEFAULT], yolov8s.pt, yolov8m.pt, yolov8l.pt, yolov8x.pt
+--det yolov8n.pt
+#segmentation Fast=>Slow: yolov8n-seg.pt[DEFAULT], yolov8s-seg.pt, yolov8m-seg.pt, yolov8l-seg.pt, yolov8x-seg.pt
+--seg yolov8n-seg.pt
+#classificationFast=>Slow: yolov8n-cls.pt[DEFAULT], yolov8s-cls.pt, yolov8m-cls.pt, yolov8l-cls.pt, yolov8x-cls.pt
+--cls yolov8n-cls.pt
+#pose Fast=>Slow: yolov8n-pose.pt[DEFAULT], yolov8s-pose.pt, yolov8m-pose.pt, yolov8l-pose.pt, yolov8x-pose.pt, yolov8x-pose-p6.pt
+--pose yolov8n-pose.pt
